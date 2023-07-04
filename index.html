@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Primeira aula front curso Java</title>
+  </head>
+  <body>
+    <!--<p> significa paragrafo -->
+    <p>hello world!</p>
+
+    <!--<h1> e variações são usadaspara cria titulos-->
+    <h1>Primeira aula front curso Java</h1>
+    <h2>Primeira aula front curso Java</h2>
+    <h3>Primeira aula front curso Java</h3>
+    <h4>Primeira aula front curso Java</h4>
+    <h5>Primeira aula front curso Java</h5>
+    <h6>Primeira aula front curso Java</h6>
+
+    <p>Primeira pagina html</p>
+
+    <p>
+        <!--<hr> serve para pular linha e criar uma linha no lugar-->
+      <hr>
+      <!--<b> serve para deixar em destaque, negrito-->
+      <b>Lorem ipsum dolor sit amet consectetur adipisicing elit. <strong> molestiae
+      <!--<strong> destaca da mesma forma que b porem deixa o conteudo como de grande importancia -->
+      velit recusandae,</strong> aperiam magni aut nulla temporibus excepturi aliquid at
+      deserunt consectetur quaerat totam mollitia placeat praesentium cumque
+      aspernatur fuga.</b>
+      <!--<br> serve para pular linha-->
+      <br>
+
+    </p>
+
+    <h1>Lista desordenada</h1>
+    <!--<ul> gera uma lista desordenada-->
+    <ul>
+        <!--<li>  é usado para representar um item que faz parte de uma lista-->
+        <li>arooz</li>
+        <li>feijão</li>
+        <li>açucar</li>
+        <li>agua</li>
+    </ul>
+
+    <h1>Lista ordenada</h1>
+    <!--<ol> gera uma lista ordenada-->
+    <ol>
+        <li>mercado</li>
+        <li>escola</li>
+        <li>curso</li>
+        <li>casa</li>
+    </ol>
+    <hr>
+
+    <h1>Imagens:</h1>
+    <!--<img/> serve para atribuir uma imagem a pagina-->
+    <!--src serve para atribuir o enderço da imagem-->
+    <!--alt serve para atribuir um nome a imagem na internet-->
+    <img src="https://th.bing.com/th/id/OIP.ZgJ-CcOg4xX3vcibbXDJaQHaHa?w=158&h=180&c=7&r=0&o=5&pid=1.7" alt="html5"/>
+
+    <!--src serve para atribuir o enderço da imagem na pasta-->
+    <!--style serve para atribuir variaçoes de ediçao de estilo do conteudo-->
+    <!--A propriedade CSS width determina a largura da área de conteúdo de um elemento-->
+    <img style="width: 300px;" src="C:\Users\Aluno Noite\Desktop\java_noturno\imagens\zelda.jpg" alt="Link do Zelda"/>
+
+    <hr>
+    <h1>Link</h1>
+    <!--<a> (ou elemento âncora), com o atributo href cria-se um hiperligação nas páginas web, arquivos, endereços de emails, ligações na mesma página ou endereços na URL.-->
+    <!--Target especifica onde abrir o documento vinculado:-->
+    <!--<href> especifica o link de destino -->
+    <a target="_blank" href="https://www.bing.com/search?form=NTPCHT&showconv=1&sendquery=1&q=chat" >Link para chatGPT4</a>
+
+    <hr>
+    <h1>Tabelas</h1>
+    <!--As tabelas HTML permitem que os desenvolvedores da Web organizem os dados em linhas e colunas-->
+    <table>
+        <!--Na tag tr, o "t" é de table e o "r" de row, que também significa linha, ou fileira-->
+        <tr>
+            <!--<th> define uma célula cabeçalho do grupo de células de sua tabela-->
+            <th>Nome</th>
+            <th>Nascimento</th>
+            <th>Telefone</th>
+            <th>Cidade</th>
+        </tr>
+    
+
+    <tr>
+        <!--<td> - Como criar linhas de uma tabela em HTML Como já devem suspeitar, a tag td será a responsável por criar colunas em nossas tabelas-->
+        <td>Dudu</td>
+        <td>30/4/1997</td>
+        <td>(11)98762-6789</td>
+        <td>São Paulo</td>
+    </tr>
+
+    <tr>
+        <td>Veiga</td>
+        <td>17/4/2004</td>
+        <td>(11)98474-3526</td>
+        <td>São Paulo</td>
+    </tr>
+    </table>
+
+    <hr>
+    <h1>Formulario</h1>
+    <form>
+        <label for="nome">Nome:</label><br>
+        <input type="text" id="nome" name="primeiroNome" placeholder="Digite aqui seu nome"><br>
+        
+        <label for="sobrenome">Sobrenome:</label><br>
+        <input type="text" id="sobrenome" name="sobrenome" placeholder="Digite aqui seu sobrenome"><br>
+        
+        <label for="email">E-mail:</label><br>
+        <input type="email" id="email" name="email" placeholder="seuemail@fake.com.br"><br>
+
+        <label for="numero">Numero:</label><br>
+        <input type="number" id="numero" name="numero" placeholder="aqui so aceita números"><br>
+
+        <label for="senha">Senha:</label><br>
+        <input type="password" id="senha" name="senha" placeholder="digite aqui sua senha"><br>
+
+        <label for="telefone">Telefone:</label><br>
+        <input type="tel" id="telefone" name="telefone" pattern="[0-9]{3}-[0-9]{5}-[0-9]{4}" placeholder="seuemail@fake.com.br"><br>
+
+        <h3>Selecione um curso de seu interesse</h3>
+        
+        <input type="radio" id="front" name="curso" value="front">
+        <label for="front">Front-end</label><br>
+
+        <input type="radio" id="back" name="curso" value="back">
+        <label for="back">Back-end</label><br>
+
+        <input type="radio" id="sql" name="curso" value="sql">
+        <label for="sql">Banco de dados</label><br>
+
+        <h3>Horarios que tem disponibilidade</h3>
+        <input type="checkbox" id="matutino" name="matutino" value="matutino">
+        <label for="matutino">Turno matutino</label><br>
+
+        <input type="checkbox" id="vespertino" name="vespertino" value="vespertino">
+        <label for="vespertino">Turno vespertino</label><br>
+
+        <input type="checkbox" id="noturno" name="noturno" value="noturno">
+        <label for="noturno">Turno noturno</label><br>
+
+        <button type="submit" value="Enviar">Enviar</button>
+    </form>
+
+
+  </body>
+</html>
