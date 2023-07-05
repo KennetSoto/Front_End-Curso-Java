@@ -104,49 +104,57 @@
 
     <hr>
     <h1>Formulario</h1>
-    <form>
-        <label for="nome">Nome:</label><br>
-        <input type="text" id="nome" name="primeiroNome" placeholder="Digite aqui seu nome"><br>
+    <form> <!-- Cria um formulário HTML que pode ser preenchido pelo usuário -->
+        <label for="nome">Nome:</label><br> <!-- A tag <label> é usada para criar um rótulo para um elemento de formulário, como um campo de entrada de texto ou um botão de opção. O atributo "for" do <label> deve corresponder ao ID do elemento de formulário que ele está rotulando -->
+          <!-- A tag for é usada em conjunto com a tag label para associar um rótulo a um elemento de formulário. O valor do atributo for deve ser igual ao valor do atributo id do elemento de formulário que o rótulo está associando-->
+          <!--A tag input é usada para criar um campo de entrada de formulário que permite que o usuário insira dados. O tipo de campo de entrada é especificado pelo atributo type, que pode ser text, email, number, password, tel, entre outros-->
+          <!--O atributo placeholder é usado em campos de entrada de formulário para fornecer um texto de exemplo dentro do campo que desaparece quando o usuário começa a digitar. O objetivo do placeholder é fornecer uma dica ou instrução para o usuário sobre o que deve ser inserido no campo de entrada-->
+          <!--O atributo type é usado em campos de entrada de formulário para especificar o tipo de campo de entrada. O valor do atributo type pode ser text, email, number, password, tel, entre outros-->
+          <!--O atributo name é usado em campos de entrada de formulário para especificar o nome do campo. O valor do atributo name é enviado para o servidor quando o formulário é enviado-->
+        <input type="text" id="nome" name="primeiroNome" placeholder="Digite aqui seu nome"><br> <!-- Cria um campo de entrada de texto para o usuário inserir seu nome, com um ID de "nome", um nome de "primeiroNome" e um espaço reservado de "Digite aqui seu nome" -->
         
-        <label for="sobrenome">Sobrenome:</label><br>
-        <input type="text" id="sobrenome" name="sobrenome" placeholder="Digite aqui seu sobrenome"><br>
+        <label for="sobrenome">Sobrenome:</label><br> <!-- Cria um rótulo para o campo de entrada de texto "Sobrenome" e associa-o ao campo de entrada de texto usando o atributo "for" -->
+        <input type="text" id="sobrenome" name="sobrenome" placeholder="Digite aqui seu sobrenome"><br> <!-- Cria um campo de entrada de texto para o usuário inserir seu sobrenome, com um ID de "sobrenome", um nome de "sobrenome" e um espaço reservado de "Digite aqui seu sobrenome" -->
         
-        <label for="email">E-mail:</label><br>
-        <input type="email" id="email" name="email" placeholder="seuemail@fake.com.br"><br>
-
-        <label for="numero">Numero:</label><br>
-        <input type="number" id="numero" name="numero" placeholder="aqui so aceita números"><br>
-
-        <label for="senha">Senha:</label><br>
-        <input type="password" id="senha" name="senha" placeholder="digite aqui sua senha"><br>
-
-        <label for="telefone">Telefone:</label><br>
-        <input type="tel" id="telefone" name="telefone" pattern="[0-9]{3}-[0-9]{5}-[0-9]{4}" placeholder="seuemail@fake.com.br"><br>
-
-        <h3>Selecione um curso de seu interesse</h3>
+        <label for="email">E-mail:</label><br> <!-- Cria um rótulo para o campo de entrada de texto "E-mail" e associa-o ao campo de entrada de texto usando o atributo "for" -->
+        <input type="email" id="email" name="email" placeholder="seuemail@fake.com.br"><br> <!-- Cria um campo de entrada de texto para o usuário inserir seu e-mail, com um ID de "email", um nome de "email" e um espaço reservado de "seuemail@fake.com.br" -->
         
-        <input type="radio" id="front" name="curso" value="front">
-        <label for="front">Front-end</label><br>
-
-        <input type="radio" id="back" name="curso" value="back">
-        <label for="back">Back-end</label><br>
-
-        <input type="radio" id="sql" name="curso" value="sql">
-        <label for="sql">Banco de dados</label><br>
-
-        <h3>Horarios que tem disponibilidade</h3>
-        <input type="checkbox" id="matutino" name="matutino" value="matutino">
-        <label for="matutino">Turno matutino</label><br>
-
-        <input type="checkbox" id="vespertino" name="vespertino" value="vespertino">
-        <label for="vespertino">Turno vespertino</label><br>
-
-        <input type="checkbox" id="noturno" name="noturno" value="noturno">
-        <label for="noturno">Turno noturno</label><br>
-
-        <button type="submit" value="Enviar">Enviar</button>
+        <label for="numero">Numero:</label><br> <!-- Cria um rótulo para o campo de entrada de número "Numero" e associa-o ao campo de entrada de número usando o atributo "for" -->
+        <input type="number" id="numero" name="numero" placeholder="aqui so aceita números"><br> <!-- Cria um campo de entrada de número para o usuário inserir um número, com um ID de "numero", um nome de "numero" e um espaço reservado de "aqui so aceita números" -->
+        
+        <label for="senha">Senha:</label><br> <!-- Cria um rótulo para o campo de entrada de senha "Senha" e associa-o ao campo de entrada de senha usando o atributo "for" -->
+        <input type="password" id="senha" name="senha" placeholder="digite aqui sua senha"><br> <!-- Cria um campo de entrada de senha para o usuário inserir sua senha, com um ID de "senha", um nome de "senha" e um espaço reservado de "digite aqui sua senha" -->
+        
+        <label for="telefone">Telefone:</label><br> <!-- Cria um rótulo para o campo de entrada de telefone "Telefone" e associa-o ao campo de entrada de telefone usando o atributo "for" -->
+        <!--O atributo pattern é usado em campos de entrada de formulário para especificar um padrão que o valor do campo deve seguir. O padrão é especificado usando uma expressão regular. Quando o usuário insere um valor no campo, o valor é verificado em relação ao padrão especificado-->
+        <input type="tel" id="telefone" name="telefone" pattern="[0-9]{3}-[0-9]{5}-[0-9]{4}" placeholder="seuemail@fake.com.br"><br> <!-- Cria um campo de entrada de telefone para o usuário inserir seu telefone, com um ID de "telefone", um nome de "telefone", um padrão de "[0-9]{3}-[0-9]{5}-[0-9]{4}" e um espaço reservado de "seuemail@fake.com.br" -->
+        
+        <h3>Selecione um curso de seu interesse</h3> <!-- Cria um cabeçalho de nível 3 com o texto "Selecione um curso de seu interesse" -->
+        
+        <input type="radio" id="front" name="curso" value="front"> <!-- Cria um botão de opção para o usuário selecionar o curso "Front-end", com um ID de "front", um nome de "curso" e um valor de "front" -->
+        <!--O atributo value é usado em campos de entrada de formulário para especificar o valor inicial do campo. O valor do atributo value é exibido no campo de entrada de formulário quando a página é carregada. O usuário pode editar o valor do campo de entrada de formulário após a página ser carregada-->
+        <label for="front">Front-end</label><br> <!-- Cria um rótulo para o botão de opção "Front-end" e associa-o ao botão de opção usando o atributo "for" -->
+        
+        <input type="radio" id="back" name="curso" value="back"> <!-- Cria um botão de opção para o usuário selecionar o curso "Back-end", com um ID de "back", um nome de "curso" e um valor de "back" -->
+        <label for="back">Back-end</label><br> <!-- Cria um rótulo para o botão de opção "Back-end" e associa-o ao botão de opção usando o atributo "for" -->
+        
+        <input type="radio" id="sql" name="curso" value="sql"> <!-- Cria um botão de opção para o usuário selecionar o curso "Banco de dados", com um ID de "sql", um nome de "curso" e um valor de "sql" -->
+        <label for="sql">Banco de dados</label><br> <!-- Cria um rótulo para o botão de opção "Banco de dados" e associa-o ao botão de opção usando o atributo "for" -->
+        
+        <h3>Horarios que tem disponibilidade</h3> <!-- Cria um cabeçalho de nível 3 com o texto "Horarios que tem disponibilidade" -->
+        
+        <input type="checkbox" id="matutino" name="matutino" value="matutino"> <!-- Cria uma caixa de seleção para o usuário selecionar o turno "Matutino", com um ID de "matutino", um nome de "matutino" e um valor de "matutino" -->
+        <label for="matutino">Turno matutino</label><br> <!-- Cria um rótulo para a caixa de seleção "Matutino" e associa-o à caixa de seleção usando o atributo "for" -->
+        
+        <input type="checkbox" id="vespertino" name="vespertino" value="vespertino"> <!-- Cria uma caixa de seleção para o usuário selecionar o turno "Vespertino", com um ID de "vespertino", um nome de "vespertino" e um valor de "vespertino" -->
+        <label for="vespertino">Turno vespertino</label><br> <!-- Cria um rótulo para a caixa de seleção "Vespertino" e associa-o à caixa de seleção usando o atributo "for" -->
+        
+        <input type="checkbox" id="noturno" name="noturno" value="noturno"> <!-- Cria uma caixa de seleção para o usuário selecionar o turno "Noturno", com um ID de "noturno", um nome de "noturno" e um valor de "noturno" -->
+        <label for="noturno">Turno noturno</label><br> <!-- Cria um rótulo para a caixa de seleção "Noturno" e associa-o à caixa de seleção usando o atributo "for" -->
+        
+        <!--O elemento button é usado para criar um botão clicável em um formulário HTML. O botão pode ser usado para enviar o formulário ou executar uma ação específica no lado do cliente. O atributo type é usado para especificar o tipo de botão. O valor padrão do atributo type é submit, o que significa que o botão enviará o formulário quando clicado-->
+        <button type="submit" value="Enviar">Enviar</button> <!-- Cria um botão de envio para enviar o formulário preenchido pelo usuário -->
     </form>
-
 
   </body>
 </html>
