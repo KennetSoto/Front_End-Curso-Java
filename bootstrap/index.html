@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header>
+      <!-- Example Code -->
+
+      <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Inicio</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Casa</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">contato</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+              />
+              <button class="btn btn-outline-success" type="submit">
+                Buscar
+              </button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Example Code -->
+
+    <div
+      id="carouselExampleCaptions"
+      class="carousel slide"
+      data-bs-ride="carousel"
+    >
+      <!--data-bs-ride importante para o carossel rodar-->
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="0"
+          class="active"
+          aria-current="true"
+          aria-label="Slide 1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="1"
+          aria-label="Slide 2"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="2"
+          aria-label="Slide 3"
+        ></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img
+            src="https://img.freepik.com/vetores-gratis/fundo-de-videogame-desenhado-a-mao_23-2150315377.jpg?w=1380&t=st=1688775589~exp=1688776189~hmac=6b61ab1f83b276b46927887e2f51e2f720a6e4f3061cc94be3eb5058c4c81ac9"
+            alt=""
+            class="d-block w-100"
+          />
+          <div class="carousel-caption d-none d-md-block">
+            <h5>First slide label</h5>
+            <p>Some representative placeholder content for the first slide.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img
+            src="https://img.freepik.com/vetores-gratis/paisagem-de-jogo-noturno-na-pradaria-fundo-de-jogo-interminavel-com-rios-nas-ilhas-natureza-gui-paisagem-de-interface-interface-de-jogo-de-viagem-ilustracao-vetorial_1284-47782.jpg?w=1380&t=st=1688775662~exp=1688776262~hmac=a98ad4b9a53f1556043df38246496b7b4967662fb63fdcf7602ebda5530a72cc"
+            alt=""
+            class="d-block w-100"
+          />
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Second slide label</h5>
+            <p>Some representative placeholder content for the second slide.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img
+            src="https://img.freepik.com/vetores-gratis/projeto-de-plano-de-fundo-do-videogame_23-2150286094.jpg?w=1380&t=st=1688775791~exp=1688776391~hmac=0e4486332d3424212caf47cd35dc726305624b898761cc08aa9d873e364d2ab4"
+            alt=""
+            class="d-block w-100"
+          />
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Third slide label</h5>
+            <p>Some representative placeholder content for the third slide.</p>
+          </div>
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    <!-- End Example Code -->
+
+    <!--Categoria de Cursos-->
+
+    <!--row linhas, margem x auto, gap 4 -->
+    <div class="container row mx-auto g-4">
+      <!--py-5 é padding no eixo y (1 a 5)-->
+      <h2 class="text-center py-5">Categoria de cursos</h2>
+      
+       <!-- Example Code -->
+       <!--Bootstrap é responsivo porem precisa saber quantas linhas precisa quebrar-->
+       <!--colunas, md tablet, xxl telas grandes-->
+    <div class="col-6 col-md-4 col-xxl-2">
+      <div class="card" >
+        <img src="https://img.freepik.com/fotos-gratis/papel-de-parede-de-paisagem-magica-e-mistica-em-tons-de-roxo_23-2150293335.jpg?w=900&t=st=1688777724~exp=1688778324~hmac=7750023e9e62db80fcfdd1d23c9a509e5a49601018bc4f464d4782598ae1dd10">
+            <div class="card-header bg-dark">
+              <p class="text-center">Tecnologia</p>
+            </div>
+      </div>
+    </div>
+
+    <div class="col-6 col-md-4 col-xxl-2">
+        <div class="card" >
+          <img src="https://img.freepik.com/fotos-gratis/ilustracao-do-fundo-da-paisagem-do-planeta-do-espaco_826849-740.jpg?w=900&t=st=1688777449~exp=1688778049~hmac=0f5ab5becac825681225963b9f4e573a1e44db4d2f476a881c816d6a3a20b73f">
+              <div class="card-header bg-dark">
+                <p class="text-center">Tecnologia</p>
+              </div>
+        </div>
+      </div>
+
+      <div class="col-6 col-md-4 col-xxl-2">
+        <div class="card" >
+          <img src="https://img.freepik.com/fotos-gratis/homens-da-industria-trabalhando-em-maquinas-na-ia-generativa-da-fabrica-de-aco_188544-12532.jpg?w=900&t=st=1688777669~exp=1688778269~hmac=00092b07d32473021c19a4b8b3ec6f16672b3fe111c63ce990cdd49c782e6c6c">
+              <div class="card-header bg-dark">
+                <p class="text-center">Tecnologia</p>
+              </div>
+        </div>
+      </div>
+
+      <div class="col-6 col-md-4 col-xxl-2">
+        <div class="card" >
+          <img src="https://img.freepik.com/fotos-gratis/uma-cidade-com-uma-lua-no-ceu_188544-8835.jpg?w=900&t=st=1688777737~exp=1688778337~hmac=810b1541c7304e7b96c5c80c08c1aa6da540d3ad06fb70a117087c40238f88da">
+              <div class="card-header bg-dark">
+                <p class="text-center">Tecnologia</p>
+              </div>
+        </div>
+      </div>
+
+      <div class="col-6 col-md-4 col-xxl-2">
+        <div class="card" >
+          <img src="https://img.freepik.com/fotos-gratis/colagem-criativa-do-planeta-marte-com-astronauta_23-2149488969.jpg?w=900&t=st=1688777745~exp=1688778345~hmac=0085a7552e572ba03bbbe4f821b51899bedb0d95ed4fe54ff5350b45499c63ff">
+              <div class="card-header bg-dark">
+                <p class="text-center">Tecnologia</p>
+              </div>
+        </div>
+      </div>
+
+      <div class="col-6 col-md-4 col-xxl-2">
+        <div class="card" >
+          <img src="https://img.freepik.com/fotos-gratis/composicao-de-papeis-de-parede-astrais-com-asteroides_23-2149687882.jpg?w=900&t=st=1688777754~exp=1688778354~hmac=063e4067d1693d5612e4a320ea913732ee1d1e3098c8a484de7afa5a8d8faec8">
+              <div class="card-header bg-dark">
+                <p class="text-center">Tecnologia</p>
+              </div>
+        </div>
+      </div>
+      <!-- End Example Code -->
+
+      <h1>https://getbootstrap.com/</h1>
+    <script src=""></script>
+  </body>
+</html>
