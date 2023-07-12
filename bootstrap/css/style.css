@@ -5,7 +5,7 @@ nav ul li a{
 
 nav ul li a:hover{
     margin-top: -3px;
-    color: blue!important;
+    color: green!important;
 }
 
 .card p{
@@ -14,4 +14,16 @@ nav ul li a:hover{
 
 .container2 p{
     color:black;
+}
+
+.card-header, .bloco-oferecemos{
+    color: white;
+}
+
+.oferecemos i{
+    color: green;
+}
+
+.footer, p{
+    color: white;
 }
